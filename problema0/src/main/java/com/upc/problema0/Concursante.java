@@ -5,7 +5,6 @@ public abstract class Concursante {
     private String nombre;
     private String apellido;
     private Integer edad;
-
     private Integer numeroDeMensajes;
 
     public Concursante(String dni, String nombre, String apellido, Integer edad, Integer numeroDeMensajes) {
