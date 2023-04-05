@@ -20,7 +20,7 @@ public class App {
         int puntaje_barra_EQUIPO_NUCLEAR = 28;
 
         Scanner sc = new Scanner(System.in);
-
+        
         int optSelec;
         do {
             optSelec = MenuAdmin();
@@ -48,50 +48,55 @@ public class App {
                         System.out.println("Ingrese el tipo de concursante :");
                         System.out.println("Opcion 1 : FanMasacre");
                         System.out.println("Opcion 2 : Televidente");
-                        sc.nextInt();
-                        Integer concursanteTipo = sc.nextInt();
-                        switch (concursanteTipo) {
-                            case 1:
-                                //Fan masacre
-                                System.out.println("Ingrese el Equipo que pertenece :");
-                                System.out.println("Opcion 1 : EQUIPO_MUERTE");
-                                System.out.println("Opcion 2 : EQUIPO_DESTRUCCION");
-                                System.out.println("Opcion 3 : EQUIPO_NUCLEAR");
-                                sc.nextInt();
-                                Integer concursanteEquipo = sc.nextInt();
-                                switch (concursanteEquipo)
-                                {
-                                    case 1:
-
-                                    break;
-                                    case 2:
-
-                                    break;
-                                    case 3:
-
-                                    break;
-                                }
-                                //private Equipo nombre_Equipo;
-                                /*private Integer puntaje_Equipo;
-                                private Integer puntaje_Barra;
-                                * */
-
-
-
-                                break;
-                            case 2:
-                                //Televidente
-
-
-                                break;
-                        }
+                                    sc.nextInt();
+                                    Integer concursanteTipo = sc.nextInt();
+                                    switch (concursanteTipo) {
+                                        case 1:
+                                            //Fan masacre
+                                            System.out.println("Ingrese el Equipo que pertenece :");
+                                            System.out.println("Opcion 1 : EQUIPO_MUERTE");
+                                            System.out.println("Opcion 2 : EQUIPO_DESTRUCCION");
+                                            System.out.println("Opcion 3 : EQUIPO_NUCLEAR");
+                                            sc.nextInt();
+                                            Integer SelecConcursanteEquipo = sc.nextInt();
+                                            switch (SelecConcursanteEquipo)
+                                            {
+                                                case 1:
+                                                    Int concursantePuntajeEquipo= puntaje_EQUIPO_MUERTE;
+                                                break;
+                                                case 2:
+                                                    Int concursantePuntajeEquipo= puntaje_EQUIPO_DESTRUCCION;
+                                                break;
+                                                case 3:
+                                                    Int concursantePuntajeEquipo= puntaje_EQUIPO_NUCLEAR;
+                                                break;
+                                            }
+                                            //private Equipo nombre_Equipo;
+                                            /*private Integer puntaje_Equipo;
+                                            private Integer puntaje_Barra;
+                                            * */
+                                            break;
+                                        case 2:
+                                            //Televidente
+                                            System.out.println("Ingrese Ingrese la cantidad de llamada realizadas :");
+                                            sc.nextInt();
+                                            Int concursanteCantidadLlamadas = sc.nextInt();
+                                            break;
+                                    }
 
                     }
                     break;
                 case 2:
+                    /*Menu Principal opcion 2
+                    * •	Yo como administrador del sistema debo poder conocer al nombre del concursante ganador y su puntaje.
+                    * */
 
                     break;
                 case 3:
+                    /*Menu Principal opcion 3
+                    * •	Yo como administrador dado un tipo concursantes debo poder obtener un listado de todos los datos
+                    * de concursantes incluidos sus puntajes.
+                    * */
 
                     break;
             }
